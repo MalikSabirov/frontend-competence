@@ -26,7 +26,7 @@ A:
 
 `import has from 'lodash/has';`
 
-cause is better because lodash holds all its functions in a single file, so rather than import the whole 'lodash' library at 100k, it's better to just import lodash's has function which is maybe 2k.
+is better because lodash holds all its functions in a single file, so rather than import the whole 'lodash' library at 100k, it's better to just import lodash's has function which is maybe 2k.
 
 If you are using webpack 4, the following code is tree shakable.
 
