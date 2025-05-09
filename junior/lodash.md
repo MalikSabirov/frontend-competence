@@ -2,17 +2,16 @@
 
 A modern JavaScript utility library delivering modularity, performance & extras.
 
-examples
+## Example
 
-## “Array” Methods
-
+“Array” Methods
 
 `_.chunk(array, [size=1])`
 
 Creates an array of elements split into groups the length of size. If array can't be split evenly, the final chunk will be the remaining elements.
 
 
-## how to import lodash
+## How to import lodash
 
 Q:
 
