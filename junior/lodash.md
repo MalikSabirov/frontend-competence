@@ -17,7 +17,7 @@ Q:
 
 if you have two variants of import:
 
-```
+```js
 import { has } from 'lodash'
 import has from 'lodash/has'
 ```
