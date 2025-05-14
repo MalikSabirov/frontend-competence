@@ -200,33 +200,6 @@ Yarn is a package manager for Node.js, developed by Facebook. It was created to 
       </p>
     </details>
   </li>
-
-  <li>
-    <details>
-      <summary></summary>
-      <p>
-       
-      </p>
-    </details>
-  </li>
-
-  <li>
-    <details>
-      <summary></summary>
-      <p>
-       
-      </p>
-    </details>
-  </li>
-
-  <li>
-    <details>
-      <summary></summary>
-      <p>
-       
-      </p>
-    </details>
-  </li>
 </ol>
 
 Overall, Yarn is a powerful and efficient package manager for Node.js, offering performance improvements, deterministic dependency resolution, offline support, and an intuitive CLI. It has gained significant adoption within the Node.js community and is widely used in both small and large-scale projects.
@@ -414,3 +387,36 @@ Overall, pnpm offers significant advantages in terms of disk space optimization,
 </ol>
 
 Overall, while pnpm offers compelling advantages in terms of disk space optimization and installation speed, developers should carefully weigh the trade-offs and consider the potential drawbacks when deciding whether to adopt pnpm for their projects.
+
+## Which one should you choose?
+
+Ultimately, the best package manager for your project depends on your specific requirements, preferences, and willingness to adapt to new workflows. Experimentation and careful consideration of the trade-offs involved will help you make an informed decision that aligns with your project's goals and constraints.
+
+According to some advantages and disadvantages previously mentioned, some further research and personal opinion, we can see a comparative chart below, number 1 meaning the lowest score and number 3 the highest score:
+
+| Feature                             | npm | Yarn | pnpm |
+|-------------------------------------|-----|------|------|
+| Number of Package Repository        | 3   | 3    | 3    |
+| Performance                         | 2   | 3    | 3    |
+| Mature Ecosystem                    | 3   | 2    | 2    |
+| Comprehensive CLI                   | 3   | 3    | 3    |
+| Offline Support                     | 1   | 3    | 3    |
+| Security                            | 1   | 2    | 2    |
+| Dependency Bloat                    | 1   | 3    | 3    |
+| Reduced Network Bandwidth           | 2   | 2    | 3    |
+| Improved Cache Efficiency           | 2   | 2    | 3    |
+| Deterministic Dependency Resolution | 2   | 3    | 3    |
+| Disk usage                          | 1   | 2    | 3    |
+| Lockfile Handling                   | 2   | 1    | 1    |
+
+Even though npm and yarn are more popular, pnpm seems to have a promising future. Let’s check some benchmarks of JavaScript Package Managers:
+
+Speed: pnpm is three times faster and more efficient than npm, and with both cold and hot cache, pnpm is faster than Yarn.
+
+![speed](https://pnpm.io/img/benchmarks/alotta-files.svg)
+
+Source: [Benchmarks of JavaScript Package Managers](https://pnpm.io/benchmarks?ref=hackernoon.com)
+
+- Security: Pnpm, like yarn, has a special file with the checksum of all the installed packages. This ensures the integrity of all the installed packages before their code is executed. Regarding npm, there have been some security vulnerabilities that have directly affected many projects due to the way npm handles bad packages.
+- Disk space efficiency: pnpm employs a content-addressable file system to store packages and dependencies on disk. This means that identical packages are not duplicated. Even with varying versions of the same package, pnpm intelligently maximizes code reuse. For instance, if version 1 of a package consists of 500 files and version 2 adds just one more file, pnpm will not duplicate the original 500 files for version 2. Instead, it will establish a hard link to the existing 500 files and only write the new file. In contrast, npm would duplicate the original 500 files for version 2. This distinction becomes significant in large monorepo projects where a package is utilized by numerous others, potentially saving substantial disk space when using pnpm.
+- Lock files: Yarn generates a yarn.lock file to ensure that all team members are using the same package versions. This helps prevent "works on my machine" issues. Like Yarn, pnpm uses a pnpm-lock.yaml file to ensure consistent dependency versions. npm can present inconsistencies in package-lock.json which can be annoying and present issues for developers.
