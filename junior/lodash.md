@@ -38,4 +38,4 @@ The points to note;
 2. lodash-es's package.json contains "sideEffects": false, which notifies webpack 4 that all the files inside the package are side effect free (see https://webpack.js.org/guides/tree-shaking/#mark-the-file-as-side-effect-free).
 3. This information is crucial for tree shaking since module bundlers do not tree shake files which possibly contain side effects even if their exported members are not used in anywhere.
 
-As of version 1.9.0, Parcel also supports "sideEffects": false, threrefore `import { has } from 'lodash-es';` is also tree shakable with Parcel. It also supports tree shaking CommonJS modules, though it is likely tree shaking of ES Modules is more efficient than CommonJS. [example](https://github.com/kimamula/tree-shaking-demo)
+As of version 1.9.0, Parcel also supports "sideEffects": false, therefore `import { has } from 'lodash-es';` is also tree shakable with Parcel. It also supports tree shaking CommonJS modules, though it is likely tree shaking of ES Modules is more efficient than CommonJS. [example](https://github.com/kimamula/tree-shaking-demo)
