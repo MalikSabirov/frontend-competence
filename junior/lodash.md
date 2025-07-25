@@ -2,6 +2,10 @@
 
 A modern JavaScript utility library delivering modularity, performance & extras.
 
+## Navigation 
+- [Home](../)
+- [Back](./)
+
 ## Example
 
 “Array” Methods
