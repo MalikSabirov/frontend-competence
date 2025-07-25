@@ -3,8 +3,8 @@
 Bundling is the process of combining multiple files, such as JavaScript, CSS, HTML, images, fonts, and other assets, into a smaller number of files that are easier to load and manage. A bundler is a tool that automates this process, using various plugins and configurations to transform, compress, and optimize your code and assets. Some of the most popular bundlers are Webpack, Parcel, Rollup, and Browserify.
 
 ## Navigation 
-- [Home](../../)
-- [Back](../)
+- [Home](../)
+- [Back](./)
 
 ## Content
 
