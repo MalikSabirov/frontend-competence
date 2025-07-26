@@ -18,7 +18,7 @@ Well, some people really think so, and they partly correct. In the past I loved 
 1. [Keep it simple stupid](#kiss)
 1. [Don’t repeat yourself](#dry)
 1. [Afterwords](#afterwords)
-1. [Links](#links)
+1. [Resources](#resources)
 
 
 ## <a name="notneed"></a>You aren’t gonna need it
@@ -113,7 +113,7 @@ Libraries are very good helpers, but we must always keep our minds clean and rat
 
 So if you’ve finished that article and think “I already know all of that”, then great! Really! Because I faced with opposite situations.
 
-## <a name="links"></a> Links
+## <a name="resources"></a> Resources
 1. [medium](https://programmerr47.medium.com/think-twice-when-you-ready-to-add-new-library-in-project-70bc3bb87515)
 
 ## Navigation 

@@ -13,7 +13,7 @@ JavaScript bundlers and build tools are essential in modern web development, ena
 1. [How to choose a bundler?](#choose)
 1. [How to use a bundler?](#use)
 1. [JavaScript Bundlers and Build Tools Comparison](#comparison)
-1. [Links](#links)
+1. [Resources](#resources)
 
 
 ## <a name="why"></a> Why bundle your code and assets?
@@ -96,7 +96,7 @@ Performance Optimization
 - **parcel**: Choose Parcel if you want a zero-configuration setup that automatically handles file types and optimizes your assets, making it ideal for smaller projects or rapid prototyping.
 - **snowpack**:  Choose Snowpack if you prefer a modern approach with a focus on speed and simplicity, leveraging native ES modules for development and building optimized production bundles with minimal configuration.
 
-## <a name="links"></a> Links
+## <a name="resources"></a> Resources
 1. [linkedin ai suggest](https://www.linkedin.com/advice/1/what-purpose-bundler-front-end-development-skills-web-development-yrznf)
 1. [npm-compare](https://npm-compare.com/parcel,snowpack,vite,webpack)
 
