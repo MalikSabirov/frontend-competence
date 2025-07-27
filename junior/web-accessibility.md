@@ -2,7 +2,12 @@
 
 ## Summary
 
-SummaryThis page introduces some basic considerations to help you get started developing web content that is more accessible to people with disabilities. These tips are good practice to help you meet Web Content Accessibility Guidelines (WCAG) requirements. Follow the links to the related WCAG requirements, detailed background in the “Understanding” document, guidance from Tutorials, user stories, and more.
+This page introduces some basic considerations to help you get started developing web content that is more accessible to people with disabilities. These tips are good practice to help you meet Web Content Accessibility Guidelines (WCAG) requirements. Follow the links to the related WCAG requirements, detailed background in the “Understanding” document, guidance from Tutorials, user stories, and more.
+
+## Navigation 
+- [Home](../)
+- [Back](./)
+
 
 ## Associate a label with every form control
 
@@ -163,3 +168,9 @@ CAPTCHAs create problems for many people. There are other means of verifying tha
 - Providing access to a human representative who can bypass CAPTCHA
 - Not requiring CAPTCHAs for authorized users.
 
+## <a name="resources"></a> Resources
+1. [w3](https://www.w3.org/WAI/tips/developing/)
+
+## Navigation 
+- [Home](../)
+- [Back](./)

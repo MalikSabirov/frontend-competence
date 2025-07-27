@@ -9,3 +9,4 @@
 1. [Lodash](lodash.md)
 1. [About libs](about-libs.md)
 1. [Web browsers](../shared/browser.md)
+1. [Web accessibility](web-accessibility.md)
