@@ -1,4 +1,5 @@
 # frontend-competence
 
-## [junior](/junior/)
-## [middle](/middle/)
+## [Junior](/junior/)
+## [Middle](/middle/)
+## [Senior](/senior/)

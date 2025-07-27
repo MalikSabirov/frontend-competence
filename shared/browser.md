@@ -40,7 +40,7 @@ Mozilla Firefox architecture:
 
 ![firefox architecture](../assets/firefox-architecture.png)
 
-## Role of Rendering Engine
+## <a name="renderrole"></a> Role of Rendering Engine
 
 Once a user requests a particular document, the rendering engine starts fetching the content of the requested document. This is done via the networking layer. The rendering engine starts receiving the content of that specific document in chunks of 8 KBs from the networking layer. After this, the basic flow of the rendering engine begins.
 
@@ -49,6 +49,27 @@ Once a user requests a particular document, the rendering engine starts fetching
 The four basic steps include:
 
 1. The requested HTML page is parsed in chunks, including the external CSS files and in style elements, by the rendering engine. The HTML elements are then converted into DOM nodes to form a “content tree” or “DOM tree.”
+1. Simultaneously, the browser also creates a render tree. This tree includes both the styling information as well as the visual instructions that define the order in which the elements will be displayed. The render tree ensures that the content is displayed in the desired order.
+1. Further, the render tree goes through the layout process. When a render tree is created, the position or size values are not assigned. The entire process of calculating values for evaluating the desired position is called a layout process. In this process, every node is assigned the exact coordinates. This ensures that every node appears at an accurate position on the screen.
+1. The final step is to paint the screen, wherein the render tree is traversed, and the renderer’s paint() method is invoked, which paints each node on the screen using the UI backend layer.
+
+another visualization
+
+![render stages](../assets/render-stages.png)
+
+### <ins>*Render is expensive operation*</ins>
+
+### What triggers the rerender
+
+1. Resize
+1. Font change
+1. Change content
+1. add/remove classes/styles
+1. DOM manipulation
+1. Change orientation (portrait, landscape)
+1. Change size/position
+1. Calculation size/position
+
 
 ## Webkit render engine architecture
 
@@ -59,3 +80,7 @@ The four basic steps include:
 1. [geeksforgeeks](https://www.geeksforgeeks.org/software-engineering/browser-architecture/)
 1. [Ulbi TV Youtube channel](https://www.youtube.com/watch?v=zDlg64fsQow)
 1. [browserstack](https://www.browserstack.com/guide/browser-rendering-engine)
+
+## Navigation 
+- [Home](../)
+- [Back](./)
