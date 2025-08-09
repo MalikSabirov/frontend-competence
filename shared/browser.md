@@ -26,7 +26,7 @@ Blink: Google's Blink engine is part of the Chromium project and is used in brow
 Gecko: Developed by Mozilla, Gecko powers the Firefox browser. 
 WebKit: Developed by Apple, WebKit is used in Safari and other Apple products. 
 - **Networking Layer:** This layer handles the communication part. When the user enters or clicks on a URL, the network layer initiates an HTTP request to the webserver to load the requested web page. It also manages fetching resources from HTML files, images, stylesheets, and more. Have you seen those cookie notifications while searching for information on the internet? Mostly, the network layer works behind the scenes for those cookies and cache.
-- **JavaScript Engine:** The JavaScript Engine is the core component of browser architecture, with the ability to manipulate web content and introduce dynamic behavior in web pages. V8 for chrome, Gecko for firefox, JavascriptCore (also known SquirrelFish, SquirrelFish Extreme, Nitro, Nitro Extreme) for safari
+- **JavaScript Engine:** The JavaScript Engine is the core component of browser architecture, with the ability to manipulate web content and introduce dynamic behavior in web pages. V8 for chrome, SpiderMonkey for firefox, JavascriptCore (also known SquirrelFish, SquirrelFish Extreme, Nitro, Nitro Extreme) for safari
 - **Data Storage:** A large part of the browser goes into storing various types of data, which include not only user preferences, browsing history, passwords, and other regular data updates as well (address, name, and contact).
 - **UI backend:** The UI backend provides dynamic and interactive behavior on the web page and enhances the overall functionality and performance of the browser.
 
